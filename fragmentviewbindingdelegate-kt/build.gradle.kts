@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion(28)
+    compileSdkVersion(31)
 
     defaultConfig {
         minSdkVersion(9)
-        targetSdkVersion(28)
-        versionCode = 1
-        versionName = "1.0.0"
+        targetSdkVersion(31)
+        versionCode = 2
+        versionName = "1.0.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -51,6 +51,7 @@ dependencies {
     testImplementation("org.mockito:mockito-core:2.23.0")
     testImplementation("androidx.arch.core:core-testing:2.1.0")
     androidTestImplementation("junit:junit:4.13.1")
+    implementation(kotlin("reflect"))
 }
 
 // build a jar with source files

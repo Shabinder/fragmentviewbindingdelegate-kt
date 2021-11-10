@@ -32,7 +32,7 @@ class FragmentViewBindingDelegate<T : ViewBinding>(
     val viewBindingFactory: (LayoutInflater, ViewGroup?, Boolean) -> T,
     private val attachToParent:Boolean
 ) : ReadOnlyProperty<Fragment, T> {
-    private var binding: T? = null
+    var binding: T? = null
 
     init {
         fragment.lifecycle.addObserver(object : DefaultLifecycleObserver {
